@@ -1,0 +1,46 @@
+/*animaciones*/
+
+.gradiente {
+	background: radial-gradient(#fff, #79c6c5);
+}
+
+
+
+.contenedor-imagen img:hover {
+	-webkit-transform:scale(1.1);
+	transform: scale(1.1);
+	overflow: hidden;
+}
+
+#header:hover {
+	padding: 25px;
+	padding-top: 0px;
+	padding-left: 0px;
+	background-color: #247c7b;
+	transition: all 250ms;
+	color: #000;
+	height: 120px;
+}
+
+.animacion-form {
+	transition: opacity 1s;
+}
+
+.animacion-form:hover {
+	opacity: 1;
+}
+
+.contenedor-imagen:hover p {
+	transform: translateY(10px);
+	background-color: #247c7b;
+	color: white;
+}
+
+
+
+
+
+
+
+
+

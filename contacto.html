@@ -6,6 +6,7 @@
     <title>Contacto</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="css/animaciones.css">
   </head>
   <body>
     <div id="containerGrid">
@@ -25,25 +26,26 @@
         </ul>
       </div>
       <div class="banner"></div>
-      <div class="containerFlex alto-minimo">
+      <div class="containerFlex alto-minimo gradiente">
         <div class="formulario-contacto">
           <form action="formulario.html" method="GET" enctype="multipart/form-data">
             <div class="bloque-form nombre-apellido">
-              <input class="nombre-input" type="text" name="nombre" placeholder="Nombre" />
-              <input type="text" name="apellido" placeholder="Apellido" />
+              <input class="nombre-input animacion-form" type="text" name="nombre" placeholder="Nombre" />
+              <input class="apellido-input animacion-form" type="text" name="apellido" placeholder="Apellido"  
+               />
             </div>
             <div class="bloque-form cliente">
-              <div class="opcion-radio">
+              <div class="opcion-radio animacion-form" >
                 <input type="radio" name="cliente" value="nuevo" id="cn" />
                 <label for="cn">Cliente nuevo</label>
               </div>
-              <div class="opcion-radio">
+              <div class="opcion-radio animacion-form">
                 <input type="radio" name="cliente" value="concurrente" id="cc" />
                 <label for="cc">Cliente concurrente</label>
               </div>
             </div>
             <div class="bloque-form">
-              <textarea name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
+              <textarea class="animacion-form" name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
             </div>
 
             <div class="botones-form">

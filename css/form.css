@@ -9,6 +9,7 @@
 .formulario-contacto form {
 	display: flex;
 	flex-direction: column;
+
 }
 
 .bloque-form {
@@ -22,15 +23,24 @@
 
 .opcion-radio {
 	margin-right: 12px;
+	opacity: .75;
 }
 
 .nombre-input {
 	margin-right: 8px;
+	opacity: .75;
 } 
+.apellido-input {
+	margin-right: 8px;
+	opacity: .75;
+
+}
 
 .bloque-form textarea {
 	width: 100%;
 	min-height: 160px;
+	opacity: .75;
+
 }
 
 .botones-form {
