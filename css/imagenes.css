@@ -1,0 +1,27 @@
+.bloque-fotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+
+.contenedor-imagen {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	padding: 0 16px;
+}
+
+@media (max-width: 992px) {
+	.contenedor-imagen {
+		margin-bottom: 20px;
+	}
+}
+
+.contenedor-imagen img {
+	width: 100%;
+}
+
+.contenedor-imagen p {
+	font-size: 1.2rem;
+}

@@ -1,0 +1,43 @@
+.formulario-contacto {
+	display: flex;
+	padding: 20px 0;
+	width: 100%;
+	justify-self: center;
+	justify-content: center;
+}
+
+.formulario-contacto form {
+	display: flex;
+	flex-direction: column;
+}
+
+.bloque-form {
+	display: flex;
+	margin-bottom: 8px;
+}
+
+.cliente {
+	flex-direction: row;
+}
+
+.opcion-radio {
+	margin-right: 12px;
+}
+
+.nombre-input {
+	margin-right: 8px;
+} 
+
+.bloque-form textarea {
+	width: 100%;
+	min-height: 160px;
+}
+
+.botones-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.boton-enviar {
+	margin-bottom: 12px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+  </head>
+  <body>
+    <div id="containerGrid">
+      <div id="header">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="producto-menu-item">
+            <a href="productos.html">Productos</a>
+            <ol class="submenu">
+              <li class="li"><a href="productos.html#mates">Mates</a></li>
+              <li class="li"><a href="productos.html#combos">Combos</a></li>
+            </ol>
+          </li>
+          <li><a href="servicios.html">¿Quiénes somos y qué hacemos?</a></li>
+          <li><a href="instructivos.html">Instructivos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="banner"></div>
+      <div class="containerFlex alto-minimo">
+        <div class="formulario-contacto">
+          <form action="formulario.html" method="GET" enctype="multipart/form-data">
+            <div class="bloque-form nombre-apellido">
+              <input class="nombre-input" type="text" name="nombre" placeholder="Nombre" />
+              <input type="text" name="apellido" placeholder="Apellido" />
+            </div>
+            <div class="bloque-form cliente">
+              <div class="opcion-radio">
+                <input type="radio" name="cliente" value="nuevo" id="cn" />
+                <label for="cn">Cliente nuevo</label>
+              </div>
+              <div class="opcion-radio">
+                <input type="radio" name="cliente" value="concurrente" id="cc" />
+                <label for="cc">Cliente concurrente</label>
+              </div>
+            </div>
+            <div class="bloque-form">
+              <textarea name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
+            </div>
+
+            <div class="botones-form">
+              <input class="boton-enviar" type="submit" name="enviar" value="ENVIAR" />
+              <input class="boton-limpiar" type="reset" name="limpiar" value="LIMPIAR" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <span>2022 © Victoria Rodríguez</span>
+        <a href="contacto.html">Contacto</a>
+        <a href="https://www.instagram.com/amapolartes/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/amapola.amapolartes" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </body>
+</html>

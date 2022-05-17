@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto+Condensed:wght@300;400&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#containerGrid{
+ 	display: grid; 
+ 	grid-auto-flow: column;
+ 	grid-template-columns: 0 auto 0;
+ 	grid-template-rows: auto 300px 1fr auto; 
+ 	gap: 0px 0px;
+	min-height: 100vh;	
+}
+
+@media (max-width: 768px) {
+	#containerGrid {
+	 	grid-template-rows: 165px 300px 1fr auto; 
+	}
+}
+
+.nav {
+	display: flex;
+	padding: 15px;
+	flex-direction: row;
+}
+ 
+.nav li {
+	list-style: none;
+	display: flex;
+	margin-right: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.producto-menu-item {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.producto-menu-item:hover .submenu {
+	display: flex;
+	margin-left: 25px;
+}
+
+.submenu {
+	display: none;
+}
+
+#header {
+	width: 100%;
+	max-height: 50px;
+	position: sticky;
+	background-color: #299190;
+	top: 0;
+	z-index: 100;
+	text-align: left;
+	opacity: .9;
+	font-family: Roboto Condensed, sans-serif;
+	font-weight: 400;
+	grid-column: 1/4;
+	grid-row: 1/2;
+}
+
+@media (max-width: 768px) {
+	#header {
+		max-height: 165px;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.nav li {
+		display: flex;
+	}
+
+	.producto-menu-item > a {
+		width: 100%;
+	}
+
+	.producto-menu-item:hover .submenu {
+		margin-left: 0;
+	}
+
+	.submenu {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
+	}
+
+	.submenu li {
+		margin-left: 12px;
+	}
+}
+
+body {
+	font-family: Roboto Condensed, sans-serif;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	position: relative;
+}
+
+.contenido {
+	width: 100%;
+}
+
+.titulo-central {
+	display: flex;
+	width: 100%;
+	background-color: #299190;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+@media all and (max-width: 992px) {
+	.titulo-central {
+		font-size: 1.5rem;
+		flex-wrap: wrap;
+	}
+}
+
+@media all and (max-width: 768px){
+	.titulo-central {
+		font-size: 1.3rem;
+		flex-wrap: wrap;
+	}
+}
+
+.containerFlex {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	justify-self: center;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.containerFlex p {
+	font-size: 2rem;
+}
+
+.alto-minimo {
+	min-height: 45vh;
+}
+
+.banner {
+	background-image: url("../assets/fondo-header.png"); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	grid-column: 1/4;
+	grid-row: 2/3;
+}
+
+.seccion-historia {
+	padding-bottom: 20px;
+} 
+
+.texto-historia {
+	text-align: center;
+	background-color: #299190;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    max-width: 500px;
+    font-size: 20px;
+    padding: 30px;
+    margin: 16px auto 0;
+}
+
+.seccion-mates {
+	background-color: #299190;
+    color: white;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.seccion-combos {
+	background-color: #299190;
+    color: white;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenedor-video {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.contenedor-video iframe {
+		max-width: 320px;
+	} 
+} 
+
+#footer {
+	width: 100%;
+	background-color: #299190;
+	height: 30px;
+	color: powderblue;
+	text-align: center;
+	margin-right: 20px;
+	padding-top: 10px;
+	grid-column: 1/4;
+	grid-row: 4/5;
+}
+
+#footer a {
+	text-align: center;
+	font-family: Roboto Condensed, sans-serif;
+	font-weight: 400;	
+}
+
+@media (max-width: 768px) {
+	#footer {
+		display: flex;
+		height: auto;
+		padding: 12px 0;
+		flex-direction: column;
+	}
+
+	#footer span, #footer a {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.texto-instructivo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+	background-color: #299190;
+    width: 100%;
+    justify-content: center;
+}
+
+.texto-instructivo p {
+    color: white;
+    padding: 2px 15px;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+}
+
+.cliente {
+	display: block;
+}
+
