@@ -13,9 +13,10 @@
 }
 
 .limitado img {
-	height: 250px;
+	max-height: 250px;
 	object-fit: cover;
 	padding-top: 15px;
+	width: 100%;
 } 
 
 @media (max-width: 992px) {

@@ -1,0 +1,99 @@
+.color-nav {
+	color: white;
+	opacity: .75;
+}
+
+.color-nav:hover, .color-nav:focus {
+	opacity: 1;
+	color: white;
+}
+
+.background {
+	background-color: #299190;
+	color: white;
+	opacity: none;
+}
+
+.background:hover {
+	color: white;
+	background-color: #299190;
+}
+
+
+body {
+	font-family: Roboto Condensed, sans-serif;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	position: relative;
+}
+
+
+.banner {
+	background-image: url("../assets/fondo-header.png"); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+.titulo-central {
+	display: flex;
+	width: 100%;
+	background-color: #299190;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+ 
+
+.col-md-4:hover img {
+-webkit-transform:scale(1.1);
+	transform: scale(1.1);
+	overflow: hidden;
+}
+
+.limitado img {
+	max-height: 320px;
+	object-fit: cover;
+	padding-top: 15px;
+	width: 100%;
+} 
+
+.altura {
+	min-height: 96px;
+	opacity: .75;
+}
+
+.tarjeta {
+	background-color: #299190;
+	color: white;
+
+}
+
+.excepcion {
+	 color: white;
+	 font-size: 400;
+	 text-align: center;
+	 opacity: .75;
+}
+
+.footer {
+	background-color: #299190;
+	color: white;
+}
+
+.footer a {
+	color: white;
+	opacity: .75;
+}
+
+
+
+
+
