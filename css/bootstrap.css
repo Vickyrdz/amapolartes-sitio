@@ -123,6 +123,54 @@ body {
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.35);
 }
 
+.ancho {
+	margin: auto;
+}
+
+.contenedor-carousel {
+	max-width: 50%;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.carousel-item img {
+	background-color: #fafafa;
+	max-height: 400px;
+	object-fit: contain;
+	width: 100%;
+}
+
+.flecha-carousel {
+	background-color: #31a8a7;
+	opacity: 1;
+	z-index: 3;
+}
+
+.flecha-carousel:hover, .flecha-carousel:focus {
+	background-color: #299190;
+	opacity: 1;
+	z-index: 3;
+}
+
+.arreglo {
+	position: absolute;
+  	right: 15%;
+  	color: #fff;
+  	text-align: center;
+  	z-index: 1;
+}
+
+.textito {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #494949;
+	opacity: .5;
+	color: white;
+	z-index: 1;
+}
+
 
 
 
