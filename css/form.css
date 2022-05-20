@@ -9,7 +9,6 @@
 .formulario-contacto form {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .bloque-form {
@@ -17,37 +16,22 @@
 	margin-bottom: 8px;
 }
 
-.cliente {
-	flex-direction: row;
-}
-
 .opcion-radio {
-	margin-right: 12px;
 	opacity: .75;
 }
 
-.nombre-input {
+.nombre-input, .apellido-input {
 	margin-right: 8px;
 	opacity: .75;
-} 
-.apellido-input {
-	margin-right: 8px;
-	opacity: .75;
-
 }
 
 .bloque-form textarea {
 	width: 100%;
 	min-height: 160px;
 	opacity: .75;
-
 }
 
 .botones-form {
 	display: flex;
-	flex-direction: column;
-}
-
-.boton-enviar {
-	margin-bottom: 12px;
+	justify-content: space-between;
 }

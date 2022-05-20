@@ -4,63 +4,90 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <link rel="stylesheet" type="text/css" href="css/form.css" />
-    <link rel="stylesheet" type="text/css" href="css/animaciones.css">
   </head>
   <body>
     <div id="containerGrid">
-      <div id="header">
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li class="producto-menu-item">
-            <a href="productos.html">Productos</a>
-            <ol class="submenu">
-              <li class="li"><a href="productos.html#mates">Mates</a></li>
-              <li class="li"><a href="productos.html#combos">Combos</a></li>
-            </ol>
-          </li>
-          <li><a href="servicios.html">¿Quiénes somos y qué hacemos?</a></li>
-          <li><a href="instructivos.html">Instructivos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <div id="header" style="background-color: #299190;">
+        <div class="container-fluid">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active color-nav" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle color-nav" data-bs-toggle="dropdown" href="productos.html" role="button" aria-expanded="false">Productos</a>
+              <ul class="dropdown-menu background">
+                <li><a class="dropdown-item color-nav background" href="productos.html#mates">Mates</a></li>
+                <li><a class="dropdown-item color-nav background" href="productos.html#combos">Combos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-nav" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-nav" href="instructivos.html">Instructivos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-nav" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="banner"></div>
-      <div class="containerFlex alto-minimo gradiente">
+      <div class="containerFlex gradiente">
         <div class="formulario-contacto">
           <form action="formulario.html" method="GET" enctype="multipart/form-data">
-            <div class="bloque-form nombre-apellido">
-              <input class="nombre-input animacion-form" type="text" name="nombre" placeholder="Nombre" />
-              <input class="apellido-input animacion-form" type="text" name="apellido" placeholder="Apellido"  
-               />
-            </div>
-            <div class="bloque-form cliente">
-              <div class="opcion-radio animacion-form" >
-                <input type="radio" name="cliente" value="nuevo" id="cn" />
-                <label for="cn">Cliente nuevo</label>
+            <div class="row g-3 bloque-form">
+              <div class="col-sm-6">
+                <input class="form-control nombre-input animacion-form" type="text" placeholder="Nombre" aria-label="input nombre" />
               </div>
-              <div class="opcion-radio animacion-form">
-                <input type="radio" name="cliente" value="concurrente" id="cc" />
-                <label for="cc">Cliente concurrente</label>
+              <div class="col-sm-6">
+                <input class="form-control apellido-input animacion-form" type="text" placeholder="Apellido" aria-label="input apellido" />
               </div>
             </div>
-            <div class="bloque-form">
-              <textarea class="animacion-form" name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
+            <div class="row g-3 bloque-form">
+              <div class="col-sm-6">
+                <input class="form-check-input animacion-form opcion-radio" type="radio" name="cliente" id="radioCliente1" />
+                <label class="form-check-label" for="radioCliente1">
+                  Cliente nuevo
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-check-input animacion-form opcion-radio" type="radio" name="cliente" id="radioCliente2" />
+                <label class="form-check-label" for="radioCliente2">
+                  Cliente concurrente
+                </label>
+              </div>
             </div>
-
-            <div class="botones-form">
-              <input class="boton-enviar" type="submit" name="enviar" value="ENVIAR" />
-              <input class="boton-limpiar" type="reset" name="limpiar" value="LIMPIAR" />
+            <div class="row g-3 bloque-form">
+              <div class="col">
+                <textarea class="animacion-form" name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
+              </div>
+            </div>
+            <div class="row g-3">
+              <span class="col-sm-6"></span>
+              <div class="col-sm-6 botones-form">
+                <input class="btn btn-secondary boton-limpiar" type="reset" name="limpiar" value="LIMPIAR" />
+                <input class="btn btn-primary boton-enviar" type="submit" name="enviar" value="ENVIAR" />
+              </div>
             </div>
           </form>
         </div>
       </div>
-      <div id="footer">
-        <span>2022 © Victoria Rodríguez</span>
-        <a href="contacto.html">Contacto</a>
-        <a href="https://www.instagram.com/amapolartes/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/amapola.amapolartes" target="_blank">Facebook</a>
+
+      <div class="footer">
+        <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
+          <span class="mb-3 mb-md-0">© 2022 Victoria Rodriguez</span>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="contacto.html" class="text-decoration-none">Contacto</a></li>
+            <li class="ms-3"><a href="https://www.instagram.com/amapolartes/" class="text-decoration-none">Instagram</a></li>
+            <li class="ms-3"><a href="https://www.facebook.com/amapola.amapolartes" class="text-decoration-none">Facebook</a></li>
+          </ul>
+        </footer>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
