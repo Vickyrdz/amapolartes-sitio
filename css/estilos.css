@@ -1,3 +1,8 @@
+.header-color {
+	background-color: #299190;
+	padding: 10px;
+}
+
 .color-nav {
 	color: white;
 	opacity: .75;
@@ -8,13 +13,14 @@
 	color: white;
 }
 
-.background {
+.background-header {
+	
 	background-color: #299190;
 	color: white;
 	opacity: none;
 }
 
-.background:hover {
+.background-header:hover {
 	color: white;
 	background-color: #299190;
 }
@@ -71,6 +77,14 @@ body {
 	padding-top: 15px;
 	width: 100%;
 }
+
+.limitado-destacadas img {
+	max-height: 320px;
+	object-fit: cover;
+	padding-top: 15px;
+	width: 100%;
+} 
+
 
 
 .altura {
@@ -135,32 +149,6 @@ body {
 	margin: auto;
 }
 
-/*.contenedor-carousel {
-	max-width: 50%;
-	margin: 0 auto;
-	display: flex;
-	position: relative;
-	z-index: 2;
-}
-
-.carousel-item img {
-	background-color: #fafafa;
-	max-height: 400px;
-	object-fit: contain;
-	width: 100%;
-}
-
-.flecha-carousel {
-	background-color: #31a8a7;
-	opacity: 1;
-	z-index: 3;
-}
-
-.flecha-carousel:hover, .flecha-carousel:focus {
-	background-color: #299190;
-	opacity: 1;
-	z-index: 3;
-}*/
 
 .arreglo {
 	position: absolute;
@@ -249,4 +237,13 @@ iframe {
 .espacios-tarjetas{
 	padding-bottom: 20px;
 }
+
+
+@media all and (max-width: 768px) {
+	.footer span {
+		padding-top: 10px;
+	}
+}
+ 
+
 

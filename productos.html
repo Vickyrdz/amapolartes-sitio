@@ -9,137 +9,136 @@
   </head>
   <body>
     <div id="containerGrid">
-      <div id="header" style="background-color: #299190;">
-        <div class="container-fluid">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active color-nav" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link dropdown-toggle color-nav" data-bs-toggle="dropdown" href="productos.html" role="button" aria-expanded="false">Productos</a>
-              <ul class="dropdown-menu background">
-                <li><a class="dropdown-item color-nav background" href="productos.html#mates">Mates</a></li>
-                <li><a class="dropdown-item color-nav background" href="productos.html#combos">Combos</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-nav" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-nav" href="instructivos.html">Instructivos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-nav" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+      <nav id="header" class="navbar navbar-expand-lg navbar-dark header-color">
+      <a class="navbar-brand" href="index.html">Amapolartes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-dropdown" aria-controls="navbar-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-dropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle color-nav" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+             <ul class="dropdown-menu background-header" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item color-nav background-header" href="productos.html#mates">Mates</a></li>
+              <li><a class="dropdown-item color-nav background-header" href="productos.html#combos">Combos</a></li>
+             </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="instructivos.html">Instructivos</a></li>
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="banner"></div>
+    <div class="containerFlex">
+      <div class="titulo-central seccion-mates" id="mates">
+        <span>MATES</span>
+      </div>
+
+       <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
+        <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/redondito-flores-rojas.jpeg" class="card-img-top" alt="redondito flores rojas" />
+            <div class="card-body">
+              <h5 class="card-title">Modelo huevito</h5>
+              <p class="card-text altura">Con diseño de flores rojas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+              <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-azul-rosa.jpeg" class="card-img-top" alt="combo blanco" />
+            <div class="card-body">
+              <h5 class="card-title">Mate redondo</h5>
+              <p class="card-text altura">Con diseño de flores rosas en base azul. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+              <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-camuflado.jpeg" class="card-img-top" alt="combo azul" />
+            <div class="card-body">
+              <h5 class="card-title">Mate camuflado</h5>
+              <p class="card-text altura">Con diseño camuflado. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+              <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
+        <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-cerezo.jpeg" class="card-img-top" alt="redondito flores rojas" />
+            <div class="card-body">
+              <h5 class="card-title">Mate Cerezo</h5>
+                <p class="card-text altura">Con diseño del árbol de cerezos, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+                <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card limitado tarjeta">
+          <img src="assets/mate-heax-rosa.jpeg" class="card-img-top" alt="combo blanco" />
+            <div class="card-body">
+              <h5 class="card-title">Mate hexagonal</h5>
+                <p class="card-text altura">Con diseño rosado. Con orificio para la bombilla. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+                <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+        </div>
+      </div>
+        <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-hexag-celeste.jpeg" class="card-img-top" alt="combo azul" />
+            <div class="card-body">
+              <h5 class="card-title">Mate hexagonal</h5>
+              <p class="card-text altura">Con diseño con hojitas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+              <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="banner"></div>
-      <div class="containerFlex">
-        <div class="titulo-central seccion-mates" id="mates">
-          <span>MATES</span>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/redondito-flores-rojas.jpeg" class="card-img-top" alt="redondito flores rojas" />
-              <div class="card-body">
-                <h5 class="card-title">Modelo huevito</h5>
-                <p class="card-text altura">Con diseño de flores rojas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-azul-rosa.jpeg" class="card-img-top" alt="combo blanco" />
-              <div class="card-body">
-                <h5 class="card-title">Mate redondo</h5>
-                <p class="card-text altura">Con diseño de flores rosas en base azul. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-camuflado.jpeg" class="card-img-top" alt="combo azul" />
-              <div class="card-body">
-                <h5 class="card-title">Mate camuflado</h5>
-                <p class="card-text altura">Con diseño camuflado. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-
-        <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-cerezo.jpeg" class="card-img-top" alt="redondito flores rojas" />
-              <div class="card-body">
-                <h5 class="card-title">Mate Cerezo</h5>
-                    <p class="card-text altura">Con diseño del árbol de cerezos, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                    <div class="excepcion"><small>Sin stock</small></div>
-                  </div>
-                </div>
-              </div>
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-heax-rosa.jpeg" class="card-img-top" alt="combo blanco" />
-              <div class="card-body">
-                <h5 class="card-title">Mate hexagonal</h5>
-                <p class="card-text altura">Con diseño rosado. Con orificio para la bombilla. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-hexag-celeste.jpeg" class="card-img-top" alt="combo azul" />
-              <div class="card-body">
-                <h5 class="card-title">Mate hexagonal</h5>
-                <p class="card-text altura">Con diseño con hojitas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-hexag-leopardo.jpeg" class="card-img-top" alt="redondito flores rojas" />
-              <div class="card-body"></div>
-                <h5 class="card-title">Mate Hexagonal</h5>
-                  <p class="card-text altura">Con diseño alopardado, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                  <div class="excepcion"><small>Sin stock</small></div>
-                  </div>
-                </div>
-          <div class="col">
-              <div class="card limitado tarjeta">
-                <img src="assets/mate-huevito.jpeg" class="card-img-top" alt="combo blanco" />
-                <div class="card-body">
-                  <h5 class="card-title">Mate huevito</h5>
-                  <p class="card-text altura">Con un delicado diseño de flores.  Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                  <div class="excepcion"><small>Sin stock</small></div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card limitado tarjeta">
-                <img src="assets/mate-lavanda.jpeg" class="card-img-top" alt="combo azul" />
-                <div class="card-body">
-                  <h5 class="card-title">Mate lavanda</h5>
-                  <p class="card-text altura">Con diseño de flores de lavanda. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                  <div class="excepcion"><small>Sin stock</small></div>
-                </div>
-              </div>
-            </div>
-          </div>
       <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
+        <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-hexag-leopardo.jpeg" class="card-img-top" alt="redondito flores rojas" />
+            <div class="card-body">
+              <h5 class="card-title">Mate Hexagonal</h5>
+                <p class="card-text altura">Con diseño alopardado, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+               <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card limitado tarjeta">
+              <img src="assets/mate-huevito.jpeg" class="card-img-top" alt="combo blanco" />
+              <div class="card-body">
+                <h5 class="card-title">Mate huevito</h5>
+                <p class="card-text altura">Con un delicado diseño de flores.  Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+                <div class="excepcion"><small>Sin stock</small></div>
+              </div>
+          </div>
+      </div>
+          <div class="col">
+            <div class="card limitado tarjeta">
+              <img src="assets/mate-lavanda.jpeg" class="card-img-top" alt="combo azul" />
+              <div class="card-body">
+                <h5 class="card-title">Mate lavanda</h5>
+                <p class="card-text altura">Con diseño de flores de lavanda. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+                <div class="excepcion"><small>Sin stock</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+     <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
         <div class="col">
           <div class="card limitado tarjeta">
             <img src="assets/mate-negro-rojo.jpeg" class="card-img-top" alt="redondito flores rojas" />
@@ -147,29 +146,29 @@
               <h5 class="card-title">Mate huevito</h5>
                 <p class="card-text altura">Con un diseño elegante, uno de los más pedidos; vos elegí la combinación de colores que más te guste. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
                 <div class="excepcion"><small>Sin stock</small></div>
-                </div>
-              </div>
             </div>
+         </div>
+        </div>
+      <div class="col">
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-huevito.jpeg" class="card-img-top" alt="combo blanco" />
+            <div class="card-body">
+              <h5 class="card-title">Mate huevito</h5>
+              <p class="card-text altura">Con un delicado diseño de flores.  Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+              <div class="excepcion"><small>Sin stock</small></div>
+            </div>
+          </div>
+        </div>
         <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-huevito.jpeg" class="card-img-top" alt="combo blanco" />
-              <div class="card-body">
-                <h5 class="card-title">Mate huevito</h5>
-                <p class="card-text altura">Con un delicado diseño de flores.  Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
+          <div class="card limitado tarjeta">
+            <img src="assets/mate-negro-rosa.jpeg" class="card-img-top" alt="combo azul" />
+            <div class="card-body">
+              <h5 class="card-title">Mate flor rosa</h5>
+              <p class="card-text altura">Con diseño de flores rosas en base negra, encontralo en combos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
+              <div class="excepcion"><small>Sin stock</small></div>
             </div>
           </div>
-          <div class="col">
-            <div class="card limitado tarjeta">
-              <img src="assets/mate-negro-rosa.jpeg" class="card-img-top" alt="combo azul" />
-              <div class="card-body">
-                <h5 class="card-title">Mate flor rosa</h5>
-                <p class="card-text altura">Con diseño de flores rosas en base negra, encontralo en combos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="excepcion"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
       <div class="titulo-central seccion-combos" id="combos">
           <span>COMBOS</span>
