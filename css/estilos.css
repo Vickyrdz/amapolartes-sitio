@@ -41,7 +41,6 @@ body {
 }
 
 .titulo-central {
-  display: flex;
   width: 100%;
   background-color: #299190;
   color: white;
@@ -51,6 +50,7 @@ body {
   padding-bottom: 2px;
   font-weight: 700;
   font-size: 1.5rem;
+  display: flex;
   justify-content: center;
 }
 
@@ -60,19 +60,15 @@ body {
   overflow: hidden;
 }
 
-.limitado img {
+.imagen-limitada img, .limitado img, .limitado-combo img, .limitado-destacadas img {
   max-height: 320px;
   object-fit: cover;
   padding-top: 15px;
   width: 100%;
-  min-height: 500px;
 }
 
-.limitado-combo img, .limitado-destacadas img {
-  max-height: 320px;
-  object-fit: cover;
-  padding-top: 15px;
-  width: 100%;
+.limitado img {
+  min-height: 500px;
 }
 
 .altura {
@@ -87,7 +83,7 @@ body {
 
 .excepcion {
   color: white;
-  font-size: 400;
+  font-weight: 400;
   text-align: center;
   opacity: .75;
 }
@@ -148,6 +144,7 @@ body {
   margin-bottom: 20px;
   background-color: #299190;
   width: 100%;
+  display: flex;
   justify-content: center;
 }
 
@@ -159,8 +156,8 @@ body {
 }
 
 .contenedor-video {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: center;
 }
 
@@ -236,16 +233,20 @@ iframe {
 
 /* formulario */
 .formulario-contacto {
-  display: flex;
   padding: 20px 0;
   width: 100%;
   justify-self: center;
+  display: flex;
   justify-content: center;
 }
 
 .formulario-contacto form {
   display: flex;
   flex-direction: column;
+}
+
+.opacidad-form {
+  opacity: .75;
 }
 
 .bloque-form {

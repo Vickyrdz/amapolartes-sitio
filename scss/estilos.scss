@@ -1,3 +1,10 @@
+$resoluciones: (tablet: 768px);
+
+@mixin flex-justify-center {
+	display: flex;
+	justify-content: center;
+};
+
 .header-color {
 	background-color: #299190;
 	padding: 10px;
@@ -42,7 +49,6 @@ body {
 
 
 .titulo-central {
-	display: flex;
 	width: 100%;
 	background-color: #299190;
     color: white;
@@ -52,7 +58,7 @@ body {
     padding-bottom: 2px;
     font-weight: 700;
     font-size: 1.5rem;
-    justify-content: center;
+    @include flex-justify-center;
 }
 
 .col-md-4 {
@@ -65,23 +71,25 @@ body {
 	}
 } 
 
-.limitado {
-	img {
-	max-height: 320px;
-	object-fit: cover;
-	padding-top: 15px;
-	width: 100%;
-	min-height: 500px;
-  }
-}
-
-.limitado-combo, .limitado-destacadas {
+.imagen-limitada {
 	img {
 		max-height: 320px;
 		object-fit: cover;
 		padding-top: 15px;
-		width: 100%;	
+		width: 100%;
 	}
+}
+
+.limitado {
+	@extend .imagen-limitada;
+
+	img {
+		min-height: 500px;
+	}
+}
+
+.limitado-combo, .limitado-destacadas {
+	@extend .imagen-limitada;
 }
 
 .altura {
@@ -92,12 +100,11 @@ body {
 .tarjeta {
 	background-color: #299190;
 	color: white;
-
 }
 
 .excepcion {
 	 color: white;
-	 font-size: 400;
+	 font-weight: 400;
 	 text-align: center;
 	 opacity: .75;
 }
@@ -158,19 +165,19 @@ body {
     margin-bottom: 20px;
 	background-color: #299190;
     width: 100%;
-    justify-content: center;
+    @include flex-justify-center;
+
     p {
     	color: white;
-    padding: 2px 15px;
-    text-align: center;
-    font-weight: 700;
+	    padding: 2px 15px;
+	    text-align: center;
+	    font-weight: 700;
     }
 }
 
 .contenedor-video {
-	display: flex;
 	width: 100%;
-	justify-content: center;
+    @include flex-justify-center;
 }
 
 iframe {
@@ -207,7 +214,6 @@ iframe {
 .color-pregunta {
 	background-color: #299190;
 	color: #d4e9e9;
-
 }
 
 .accordion-button.mio {
@@ -239,34 +245,38 @@ iframe {
 	}
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: map-get($resoluciones, tablet)){
 	.footer span {
 		padding-top: 10px;
-
 	}
 }
 
 /* formulario */
 
 .formulario-contacto {
-	display: flex;
 	padding: 20px 0;
 	width: 100%;
 	justify-self: center;
-	justify-content: center;
+    @include flex-justify-center;
+
 	form {
 		display: flex;
-	flex-direction: column;
+		flex-direction: column;
 	}
+}
+
+.opacidad-form {
+	opacity: .75;
 }
 
 .bloque-form {
 	display: flex;
 	margin-bottom: 8px;
+
 	textarea {
 		width: 100%;
-	min-height: 160px;
-	opacity: .75;
+		min-height: 160px;
+		opacity: .75;
 	}
 }
 
