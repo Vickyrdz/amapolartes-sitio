@@ -13,6 +13,10 @@
   color: white;
 }
 
+.navbar-nav .dropdown .nav-link.active {
+  opacity: 1;
+}
+
 .background-header {
   background-color: #299190;
   color: white;
@@ -33,7 +37,7 @@ body {
 }
 
 .banner {
-  background-image: url("../assets/fondo-header.png");
+  background-image: url("../assets/fondo-header-1920_x_958.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,12 +56,6 @@ body {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
-}
-
-.col-md-4:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  overflow: hidden;
 }
 
 .imagen-limitada img, .limitado img, .limitado-combo img, .limitado-destacadas img {
@@ -92,26 +90,38 @@ body {
   background: radial-gradient(#fff, #79c6c5);
 }
 
+.gradiente2 {
+  background: radial-gradient(#fff, #79c6c55e);
+}
+
 .contenido {
   width: 100%;
 }
 
-.seccion-historia {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.tarjetas-servicios {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 25px;
+  flex-direction: column;
 }
 
-.texto-historia {
-  text-align: center;
+.foto-mejor {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.foto-mejor2 {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.body-card {
   background-color: #299190;
-  color: white;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-align: center;
-  max-width: 500px;
-  font-size: 20px;
-  padding: 30px;
-  margin: 0 auto;
+  color: whitesmoke;
+  height: 100%;
 }
 
 .sombra {
@@ -272,4 +282,72 @@ iframe {
 .botones-form {
   display: flex;
   justify-content: space-between;
+}
+
+.row-izq, .row-der {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-izq {
+  justify-content: flex-start;
+  padding-left: 200px;
+}
+
+.row-der {
+  justify-content: flex-end;
+  padding-right: 200px;
+}
+
+.boton-enviar {
+  background-color: #299190;
+  border-color: darkgrey;
+  color: white;
+  width: 40%;
+}
+
+.cartel-alerta {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.nav2 {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+.ancho-full {
+  max-width: 540px;
+}
+
+@media all and (max-width: 768px) {
+  .tarjetas-servicios {
+    align-items: center;
+    padding: 10px;
+  }
+  .row-izq {
+    padding-left: 0px;
+  }
+  .row-der {
+    padding-right: 0px;
+  }
 }
