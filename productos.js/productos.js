@@ -55,3 +55,37 @@ let comboCompleto = new Producto("combo completo", 5500);
     console.log(listaProductosDisponibles[i]); 
   }
   
+
+  //FILTRO DE BUSQUEDA PARA EL USUARIO: 
+
+const productoIngresadoPorElUsuario = prompt("ingrese el nombre del producto que desea buscar");
+function buscarProducto() {
+  const productosEncontrados = listaProductosDisponibles.filter((producto) => {
+      const coincide = producto.nombreProducto.includes(productoIngresadoPorElUsuario);
+      return coincide;
+    }
+  )
+  if(productosEncontrados.length === 0) {
+    console.log("No se encontraron productos"); 
+  } else {
+    console.log(`los productos encontrados son: `);
+    productosEncontrados.forEach((producto) => {
+        console.log(`${producto.nombreProducto} y vale ${producto.precio}`);
+    });
+  }
+}
+
+buscarProducto();
+
+//SUPONIENDO QUE EL CLIENTE HAYA ELEGIDO ESTOS PRODUCTOS:
+ let listaProductosDelCliente = [
+  mateHuevito,
+  mateHuevito,
+  mateHexagonal, 
+  cuenco10cm,
+ ]
+
+ //SE HACE LA SUMA TOTAL
+const totalCarrito = listaProductosDelCliente.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+alert(`Gracias por tu compra, el monto a abonar es ${totalCarrito}`);
+console.log(`el total a pagar es ${totalCarrito}`);
