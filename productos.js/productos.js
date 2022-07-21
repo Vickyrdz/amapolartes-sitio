@@ -31,6 +31,15 @@ class Producto {
       this.precio = precio;
     }
   }
+
+  //Para la practicidaad del ejercicio voy a nombrar algunos de los productos
+let mateRedondo = new Producto("mate redondo", 1500);
+let mateHuevito = new Producto("mate huevito", 1500);
+let mateHexagonal = new Producto("mate hexagonal", 2000);
+let cuenco10cm = new Producto("cuenco de 10cm", 1000);
+let tablaEucalipto = new Producto("tabla eucalipto", 3000);
+let tablaAlgarrobo = new Producto("tabla algarrobo", 2500);
+let comboCompleto = new Producto("combo completo", 5500);
   
   let listaProductosDisponibles = [
     mateRedondo,
