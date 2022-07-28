@@ -40,24 +40,24 @@
       <div class="banner"></div>
       <div class="containerFlex gradiente">
         <div class="formulario-contacto">
-          <form action="formulario.html" method="GET" enctype="multipart/form-data">
+          <form id="formulario" action="formulario.html" method="GET" enctype="multipart/form-data">
             <div class="row g-3 bloque-form">
               <div class="col-sm-6">
-                <input class="form-control nombre-input animacion-form" type="text" placeholder="Nombre" aria-label="input nombre" />
+                <input id="nombre" class="form-control nombre-input animacion-form" type="text" placeholder="Nombre" aria-label="input nombre" />
               </div>
               <div class="col-sm-6">
-                <input class="form-control apellido-input animacion-form" type="text" placeholder="Apellido" aria-label="input apellido" />
+                <input id="apellido" class="form-control apellido-input animacion-form" type="text" placeholder="Apellido" aria-label="input apellido" />
               </div>
             </div>
             <div class="row g-3 bloque-form">
               <div class="col-sm-6">
-                <input class="form-check-input animacion-form opcion-radio" type="radio" name="cliente" id="radioCliente1" />
+                <input id="nuevo" class="form-check-input animacion-form opcion-radio" type="radio" name="cliente" id="radioCliente1" />
                 <label class="form-check-label" for="radioCliente1">
                   Cliente nuevo
                 </label>
               </div>
               <div class="col-sm-6">
-                <input class="form-check-input animacion-form opcion-radio" type="radio" name="cliente" id="radioCliente2" />
+                <input id="concurrente" class="form-check-input animacion-form opcion-radio" type="radio" name="cliente" id="radioCliente2" />
                 <label class="form-check-label" for="radioCliente2">
                   Cliente concurrente
                 </label>
@@ -65,20 +65,20 @@
             </div>
             <div class="row g-3 bloque-form">
               <div class="col">
-                <textarea class="animacion-form" name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
+                <textarea id="campoTexto"  class="animacion-form" name="mensaje" placeholder="Escriba aqui su pedido personalizado y/o dudas, consultas, recomendaciones"></textarea>
               </div>
             </div>
             <div class="row g-3">
               <span class="col-sm-6"></span>
               <div class="col-sm-6 botones-form">
                 <input class="btn btn-secondary boton-limpiar" type="reset" name="limpiar" value="LIMPIAR" />
-                <button class="botton boton-enviar" class="mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">ENVIAR</button>
+                <button class="botton boton-enviar" class="mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">ENVIAR</button>
                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                  <div class="modal-dialog">
                  <div class="modal-content cartel-alerta">
                  <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">!Muchas gracias! En breve te responderemos.</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button  id= "boton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
                </div>
                </div>
@@ -102,6 +102,7 @@
         </footer>
       </div>
     </div>
+    <script src="js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
