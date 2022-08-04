@@ -26,10 +26,34 @@ concurrente.addEventListener("click", () => {
     console.log("cliente concurrente");
 })
 
-
 const formulario = document.querySelector("#formulario"); 
 
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
+    const nombreFormulario = nombre.value;
+    const apellidoFormulario = apellido.value;
+    localStorage.setItem('nombreFormulario', nombreFormulario);
+    localStorage.setItem('apellidoFormulario', apellidoFormulario);
     console.log("el formulario se ha enviado con exito"); 
 })
+
+const verificarExistenciaCliente = () => {
+    const nombreStorage = localStorage.getItem('nombreFormulario'); 
+    const apellidoStorage = localStorage.getItem('apellidoFormulario'); 
+    
+    if (nombreStorage) {
+        nombre.value = nombreStorage;
+    }
+    if (apellidoStorage) {
+        apellido.value = apellidoStorage;
+    }
+    if (nombreStorage && apellidoStorage) {
+        concurrente.checked = true;
+    }
+}
+
+verificarExistenciaCliente();
+
+
+// JSON.stringify(nombreStorage); 
+// JSON.stringify(apellidoStorage); 
