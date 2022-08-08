@@ -39,21 +39,20 @@ formulario.addEventListener("submit", (e) => {
 
 const verificarExistenciaCliente = () => {
     const nombreStorage = localStorage.getItem('nombreFormulario'); 
-    const apellidoStorage = localStorage.getItem('apellidoFormulario'); 
+    const apellidoStorage = localStorage.getItem('apellidoFormulario');
+   
+        //utilicé operador or
+
+        nombre.value = nombreStorage || `` ;
     
-    if (nombreStorage) {
-        nombre.value = nombreStorage;
-    }
-    if (apellidoStorage) {
-        apellido.value = apellidoStorage;
-    }
-    if (nombreStorage && apellidoStorage) {
-        concurrente.checked = true;
-    }
+        apellido.value = apellidoStorage || `` ;
+
+        //Utilicé operador ternario 
+
+        const tipoCliente = (nombreStorage && apellidoStorage) ? concurrente : nuevo; 
+    
+        tipoCliente.checked = true;
+    
 }
 
 verificarExistenciaCliente();
-
-
-// JSON.stringify(nombreStorage); 
-// JSON.stringify(apellidoStorage); 
