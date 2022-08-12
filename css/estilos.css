@@ -351,3 +351,31 @@ iframe {
     padding-right: 0px;
   }
 }
+
+.valido {
+  border: 1px solid green;
+}
+
+.requerido {
+  border: 1px solid red;
+}
+
+.mensaje {
+  display: flex;
+}
+
+.mensaje.oculto {
+  display: none;
+}
+
+#apellido-mensaje {
+  color: red;
+}
+
+#nombre-mensaje {
+  color: red;
+}
+
+#textarea-mensaje {
+  color: red;
+}
