@@ -79,11 +79,11 @@ body {
   color: white;
 }
 
-.excepcion {
+.precio {
   color: white;
   font-weight: 400;
   text-align: center;
-  opacity: .75;
+  opacity: 1;
 }
 
 .gradiente {
@@ -378,4 +378,21 @@ iframe {
 
 #textarea-mensaje {
   color: red;
+}
+
+.boton-compra {
+  background-color: #30a8a6;
+  color: white;
+  border: none;
+  border-style: double;
+}
+
+#botonCarrito {
+  background-color: #299190;
+  border-color: white;
+}
+
+.renglonInferior {
+  display: flex;
+  justify-content: space-between;
 }
