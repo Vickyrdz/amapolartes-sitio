@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   </head>
   <body>
     <div id="containerGrid">
@@ -34,269 +35,61 @@
           <li class="nav-item"><a class="nav-link" aria-current="page" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
+      <div>
+          <button id="botonCarrito"class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <i class="bi bi-bag-check-fill"></i>
+            <span id="labelMontoHeader"></span>
+          </button>
+      </div>
     </nav>
 
     <div class="banner"></div>
     <div class="containerFlex">
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar" id="botonCarritoCerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div id="seccionItemsCarrito"></div>
+          <div id="detalleCarrito">
+            <p>Total: <span id="labelMonto">$0</span></p>
+            <button id="botonConfirmarCompra" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalConfirmarCompra">
+              Confirmar compra
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalConfirmarCompra" tabindex="-1" aria-labelledby="modalConfirmarCompraLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalConfirmarCompraLabel">Confirmar Compra</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar" id="botonModalCerrar"></button>
+            </div>
+            <div class="modal-body">
+              ¿Está seguro que desea confirmar la compra?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" id="botonModalConfirmarCompra">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h1 class="titulo-central seccion-mates" id="mates">
         <span>MATES</span>
       </h1>
 
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/redondito-flores-rojas.jpeg" class="card-img-top" alt="redondito flores rojas" />
-            <div class="card-body">
-              <h5 class="card-title">Modelo huevito</h5>
-              <p class="card-text altura">Con diseño de flores rojas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-azul-rosa.jpeg" class="card-img-top" alt="combo blanco" />
-            <div class="card-body">
-              <h5 class="card-title">Mate redondo</h5>
-              <p class="card-text altura">Con diseño de flores rosas en base azul. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-camuflado.jpeg" class="card-img-top" alt="combo azul" />
-            <div class="card-body">
-              <h5 class="card-title">Mate camuflado</h5>
-              <p class="card-text altura">Con diseño camuflado. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-cerezo.jpeg" class="card-img-top" alt="redondito flores rojas" />
-            <div class="card-body">
-              <h5 class="card-title">Mate Cerezo</h5>
-                <p class="card-text altura">Con diseño del árbol de cerezos, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-heax-rosa.jpeg" class="card-img-top" alt="combo blanco" />
-              <div class="card-body">
-                <h5 class="card-title">Mate hexagonal</h5>
-                  <p class="card-text altura">Con diseño rosado. Con orificio para la bombilla. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                  <div class="precio"><small>Sin stock</small></div>
-              </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-hexag-celeste.jpeg" class="card-img-top" alt="combo azul" />
-            <div class="card-body">
-              <h5 class="card-title">Mate hexagonal</h5>
-              <p class="card-text altura">Con diseño con hojitas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-hexag-leopardo.jpeg" class="card-img-top" alt="redondito flores rojas" />
-            <div class="card-body">
-              <h5 class="card-title">Mate Hexagonal</h5>
-                <p class="card-text altura">Con diseño alopardado, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-               <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card limitado tarjeta">
-                <img src="assets/mate-huevito.jpeg" class="card-img-top" alt="combo blanco" />
-                <div class="card-body">
-                  <h5 class="card-title">Mate huevito</h5>
-                  <p class="card-text altura">Con un delicado diseño de flores.  Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                  <div class="precio"><small>Sin stock</small></div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-lavanda.jpeg" class="card-img-top" alt="combo azul" />
-            <div class="card-body">
-              <h5 class="card-title">Mate lavanda</h5>
-              <p class="card-text altura">Con diseño de flores de lavanda. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-negro-rojo.jpeg" class="card-img-top" alt="redondito flores rojas" />
-            <div class="card-body">
-              <h5 class="card-title">Mate huevito</h5>
-                <p class="card-text altura">Con un diseño elegante, uno de los más pedidos; vos elegí la combinación de colores que más te guste. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-                <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-huevito.jpeg" class="card-img-top" alt="combo blanco" />
-            <div class="card-body">
-              <h5 class="card-title">Mate huevito</h5>
-              <p class="card-text altura">Con un delicado diseño de flores.  Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card limitado tarjeta">
-            <img src="assets/mate-negro-rosa.jpeg" class="card-img-top" alt="combo azul" />
-            <div class="card-body">
-              <h5 class="card-title">Mate flor rosa</h5>
-              <p class="card-text altura">Con diseño de flores rosas en base negra, encontralo en combos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..</p>
-              <div class="precio"><small>Sin stock</small></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="seccionMates"></div>
 
       <h1 class="titulo-central seccion-combos" id="combos">
           <span>COMBOS</span>
       </h1>
+      <div id="seccionCombos"></div>
+      </div>
       
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado-combo tarjeta">
-            <img src="assets/combo-flores-azules.jpeg" class="card-img-top" alt="combo flores azules" />
-            <div class="card-body">
-              <h5 class="card-title">Combo flores</h5>
-                <p class="card-text altura">Combo 3 piezas: 2 cuencos de 10cm y tabla de algarrobo. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-                </div>
-              </div>
-            </div>
-        <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-flores-blancas.jpeg" class="card-img-top" alt="combo blanco" />
-              <div class="card-body">
-                <h5 class="card-title">Combo blanco</h5>
-                <p class="card-text altura">Combo 3 piezas: incluye 1 cuenco de 10cm, mate huevito y tabla de algarrobo. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-celeste.jpeg" class="card-img-top" alt="combo azul" />
-              <div class="card-body">
-                <h5 class="card-title">Combo celeste</h5>
-                <p class="card-text altura">Combo 3 piezas: incluye 1 cuenco de 10cm, mate huevito y tabla de algarrobo. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado-combo tarjeta">
-            <img src="assets/combo-cremita-azucarera.jpeg" class="card-img-top" alt="combo cremita" />
-            <div class="card-body">
-              <h5 class="card-title">Combo azucarera</h5>
-                <p class="card-text altura">Combo 3 piezas: Incluye azucarera de pino, mate con bombilla y tabla de eucalipto. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-                </div>
-              </div>
-            </div>
-        <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-cremita.jpeg" class="card-img-top" alt="combo cremita" />
-              <div class="card-body">
-                <h5 class="card-title">Combo crema</h5>
-                <p class="card-text altura">Combo 3 piezas: incluye 2 cuencos de 10cm  y tabla de eucalipto. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-cuencos.jpeg" class="card-img-top" alt="combo cuencos" />
-              <div class="card-body">
-                <h5 class="card-title">Combo cuencos</h5>
-                <p class="card-text altura">Combo 2 piezas: incluye 2 cuenco de 10cm, ideales para acompañar tu mate. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado-combo tarjeta">
-            <img src="assets/combo-estelar.jpeg" class="card-img-top" alt="combo estelar" />
-            <div class="card-body">
-              <h5 class="card-title">Combo estelar</h5>
-                <p class="card-text altura">Combo 2 piezas: Incluye 1 cuenco de 10cm y mate hexagonal. Elegí la combinación de colores que más te guste. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-                </div>
-              </div>
-            </div>
-        <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-cremita.jpeg" class="card-img-top" alt="combo cremita" />
-              <div class="card-body">
-                <h5 class="card-title">Combo crema</h5>
-                <p class="card-text altura">Combo 3 piezas: incluye 2 cuencos de 10cm  y tabla de eucalipto. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-flores-blancas-amarillo.jpeg" class="card-img-top" alt="combo flores blancas amarillas" />
-              <div class="card-body">
-                <h5 class="card-title">Combo amarillo</h5>
-                <p class="card-text altura">Combo 3 piezas: incluye 1 cuenco de 10cm, mate huevito con bombilla y tabla de algarrobo. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto espacios-tarjetas">
-        <div class="col">
-          <div class="card limitado-combo tarjeta">
-            <img src="assets/combo-naranja.jpeg" class="card-img-top" alt="combo naranja" />
-            <div class="card-body">
-              <h5 class="card-title">Combo naranja</h5>
-                <p class="card-text altura">Combo 2 piezas: Incluye 1 cuenco de 10cm y mate bolita. Elegí la combinación de colores que más te guste. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-                </div>
-              </div>
-            </div>
-        <div class="col">
-            <div class="card limitado-combo tarjeta">
-              <img src="assets/combo-tricolor.jpeg" class="card-img-top" alt="combo tricolor" />
-              <div class="card-body">
-                <h5 class="card-title">Combo tricolor</h5>
-                <p class="card-text altura">Combo 2 piezas: incluye 1 cuencos de 10cm  y mate hexagonal. Diseño pintado a mano. Consultar precio.</p>
-                <div class="precio"><small>Sin stock</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <a href="https://wa.me/541161079160?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
      <div class="footer">
         <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">

@@ -1,0 +1,228 @@
+[
+  {
+    "destacado": false,
+    "altImagen": "redondito flores rojas",
+    "imagen": "./assets/redondito-flores-rojas.jpeg",
+    "nombre": "Modelo huevito",
+    "descripcion": "Con diseño de flores rojas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "modelo_huevito",
+    "precio": 2929
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo blanco",
+    "combo": true,
+    "imagen": "./assets/mate-azul-rosa.jpeg",
+    "nombre": "Mate redondo",
+    "descripcion": "Con diseño de flores rosas en base azul. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_redondo",
+    "precio": 2169
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo azul",
+    "combo": true,
+    "imagen": "./assets/mate-camuflado.jpeg",
+    "nombre": "Mate camuflado",
+    "descripcion": "Con diseño camuflado. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_camuflado",
+    "precio": 1662
+  },
+  {
+    "destacado": false,
+    "altImagen": "redondito flores rojas",
+    "imagen": "./assets/mate-cerezo.jpeg",
+    "nombre": "Mate Cerezo",
+    "descripcion": "Con diseño del árbol de cerezos, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_cerezo",
+    "precio": 1818
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo blanco",
+    "combo": true,
+    "imagen": "./assets/mate-heax-rosa.jpeg",
+    "nombre": "Mate hexagonal",
+    "descripcion": "Con diseño rosado. Con orificio para la bombilla. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_hexagonal",
+    "precio": 2124
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo azul",
+    "combo": true,
+    "imagen": "./assets/mate-hexag-celeste.jpeg",
+    "nombre": "Mate hexagonal",
+    "descripcion": "Con diseño con hojitas. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_hexagonal",
+    "precio": 2607
+  },
+  {
+    "destacado": true,
+    "altImagen": "redondito flores rojas",
+    "imagen": "./assets/mate-hexag-leopardo.jpeg",
+    "nombre": "Mate Hexagonal",
+    "descripcion": "Con diseño alopardado, uno de los más pedidos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_hexagonal",
+    "precio": 2309
+  },
+  {
+    "destacado": true,
+    "altImagen": "combo blanco",
+    "combo": true,
+    "imagen": "./assets/mate-huevito.jpeg",
+    "nombre": "Mate huevito",
+    "descripcion": "Con un delicado diseño de flores. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_huevito",
+    "precio": 1161
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo azul",
+    "combo": true,
+    "imagen": "./assets/mate-lavanda.jpeg",
+    "nombre": "Mate lavanda",
+    "descripcion": "Con diseño de flores de lavanda. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_lavanda",
+    "precio": 3138
+  },
+  {
+    "destacado": false,
+    "altImagen": "redondito flores rojas",
+    "imagen": "./assets/mate-negro-rojo.jpeg",
+    "nombre": "Mate huevito",
+    "descripcion": "Con un diseño elegante, uno de los más pedidos; vos elegí la combinación de colores que más te guste. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_huevito",
+    "precio": 1447
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo blanco",
+    "combo": true,
+    "imagen": "./assets/mate-huevito.jpeg",
+    "nombre": "Mate huevito",
+    "descripcion": "Con un delicado diseño de flores. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_huevito",
+    "precio": 1018
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo azul",
+    "combo": true,
+    "imagen": "./assets/mate-negro-rosa.jpeg",
+    "nombre": "Mate flor rosa",
+    "descripcion": "Con diseño de flores rosas en base negra, encontralo en combos. Producto de algarrobo pintado a mano. Incluye bombilla. Consultar precio..",
+    "codigo": "mate_flor_rosa",
+    "precio": 3461
+  },
+  {
+    "destacado": true,
+    "altImagen": "combo flores azules",
+    "combo": true,
+    "imagen": "./assets/combo-flores-azules.jpeg",
+    "nombre": "Combo flores",
+    "descripcion": "Combo 3 piezas: 2 cuencos de 10cm y tabla de algarrobo. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_flores",
+    "precio": 3441
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo blanco",
+    "combo": true,
+    "imagen": "./assets/combo-flores-blancas.jpeg",
+    "nombre": "Combo blanco",
+    "descripcion": "Combo 3 piezas: incluye 1 cuenco de 10cm, mate huevito y tabla de algarrobo. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_blanco",
+    "precio": 3274
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo azul",
+    "combo": true,
+    "imagen": "./assets/combo-celeste.jpeg",
+    "nombre": "Combo celeste",
+    "descripcion": "Combo 3 piezas: incluye 1 cuenco de 10cm, mate huevito y tabla de algarrobo. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_celeste",
+    "precio": 1851
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo cremita",
+    "combo": true,
+    "imagen": "./assets/combo-cremita-azucarera.jpeg",
+    "nombre": "Combo azucarera",
+    "descripcion": "Combo 3 piezas: Incluye azucarera de pino, mate con bombilla y tabla de eucalipto. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_azucarera",
+    "precio": 1040
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo cremita",
+    "combo": true,
+    "imagen": "./assets/combo-cremita.jpeg",
+    "nombre": "Combo crema",
+    "descripcion": "Combo 3 piezas: incluye 2 cuencos de 10cm y tabla de eucalipto. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_crema",
+    "precio": 2438
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo cuencos",
+    "combo": true,
+    "imagen": "./assets/combo-cuencos.jpeg",
+    "nombre": "Combo cuencos",
+    "descripcion": "Combo 2 piezas: incluye 2 cuenco de 10cm, ideales para acompañar tu mate. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_cuencos",
+    "precio": 1877
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo estelar",
+    "combo": true,
+    "imagen": "./assets/combo-estelar.jpeg",
+    "nombre": "Combo estelar",
+    "descripcion": "Combo 2 piezas: Incluye 1 cuenco de 10cm y mate hexagonal. Elegí la combinación de colores que más te guste. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_estelar",
+    "precio": 967
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo cremita",
+    "combo": true,
+    "imagen": "./assets/combo-cremita.jpeg",
+    "nombre": "Combo crema",
+    "descripcion": "Combo 3 piezas: incluye 2 cuencos de 10cm y tabla de eucalipto. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_crema",
+    "precio": 2783
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo flores blancas amarillas",
+    "combo": true,
+    "imagen": "./assets/combo-flores-blancas-amarillo.jpeg",
+    "nombre": "Combo amarillo",
+    "descripcion": "Combo 3 piezas: incluye 1 cuenco de 10cm, mate huevito con bombilla y tabla de algarrobo. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_amarillo",
+    "precio": 2871
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo naranja",
+    "combo": true,
+    "imagen": "./assets/combo-naranja.jpeg",
+    "nombre": "Combo naranja",
+    "descripcion": "Combo 2 piezas: Incluye 1 cuenco de 10cm y mate bolita. Elegí la combinación de colores que más te guste. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_naranja",
+    "precio": 3671
+  },
+  {
+    "destacado": false,
+    "altImagen": "combo tricolor",
+    "combo": true,
+    "imagen": "./assets/combo-tricolor.jpeg",
+    "nombre": "Combo tricolor",
+    "descripcion": "Combo 2 piezas: incluye 1 cuencos de 10cm y mate hexagonal. Diseño pintado a mano. Consultar precio.",
+    "codigo": "combo_tricolor",
+    "precio": 1318
+  }
+]
